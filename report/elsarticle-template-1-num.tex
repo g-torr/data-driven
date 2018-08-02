@@ -1,0 +1,203 @@
+%% This is file `elsarticle-template-1-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+\documentclass[preprint,12pt]{elsarticle}
+\usepackage{siunitx}
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% The graphicx package provides the includegraphics command.
+\usepackage{graphicx}
+\usepackage{grffile}
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+\usepackage{amsmath}
+%% The amsthm package provides extended theorem environments
+ \usepackage{amsthm}
+\usepackage{subcaption}
+\usepackage{breqn}% to break equation over multiple lines use the environment \begin{\dmath} 
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+\journal{Research method for theoretical modeling}
+\usepackage{mathrsfs}
+\usepackage{amssymb,amsmath,amsthm}
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+\title{Data driven analysis }
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author{Giuseppe Torrisi}
+
+\address{King's College, London}
+
+\begin{abstract}
+The Haemodynamic  responce  of  different brain regions during mental arithmetic tasks is investigated.  
+\end{abstract}
+\end{frontmatter}
+\tableofcontents
+%%
+%% Start line numbering here if you want
+%%
+%\linenumbers
+
+%% main text
+\section{Introduction}
+\paragraph{Brain computer interface (BCI)} are devices that aim to interpret brain activity and produce  digital signal that can be read by  a machine. The main challenge is to online classify the brain signal in a  stable and reliable way. In particular the key point for the development in BCI is to find patterns of brain activity associated to specific tasks. 
+
+In this report I analyse the hemodynamic response to metal arithmetic operation.
+\subsection{Measurement mechanism}
+Haemoglobin (Hb) is a protein found on red cells, it binds up to four $O_2$ molecules, making it the main  Oxygen carrier in blood. The Hb shows structural changes when bound with oxygen. In this case oxy-Hb  rather than deoxy-Hb is formed. Oxy-Hb and deoxy-Hb have different absorption spectra. Since biological tissure is relatively  transparent to light  in the near-infrared range between \SI{700}{\nano\meter} to \SI{1000}{\nano\meter} \cite{jobsis1977noninvasive},  near-infrared spectroscopy (NIRS)  is  suitable to  estimate  Oxy-Hb and deoxy-Hb concentration \cite{villringer1997non}.  
+
+The analysis of hemodynamic response can be used to measure the activity in different areas of brain \cite{buxton2004modeling}. Measurement at the brain tissue level  \cite{malonek1996interactions} have suggested  that in case of higher brain activity more $O_2$ is required, which causes the decrease of oxy-Hb. However, the blood flow rises  to satisfy the higher need of oxygen. In conclusion, after the early decrease of oxy-Hb, the long term effect is the   increases of haemoglobin oxygenation. The latter effect is exploited in NIRS to asses brain activity during the performance of specific tasks, \textit{e.g.} cognitive\cite{franceschini2003hemodynamic}, visual \cite{herrmann2005near}, and motor \cite{wriessnegger2008spatio}.
+However, the temporal resolution of hemodynamic response spans over several seconds, making any analysis of NIRS challenging and problematic in the case of BCI.
+
+\subsection{Protocol}
+Data  have been recorded from 8  University  students (three males and five females, all right-handed aged 26.0 $\pm$ 2.8 years. They were asked to perform one digit subtraction from a two digit number (\textit{e.g.} $93-5$). The protocol consists in  performing as many mental operation in 12 second, then  a \SI{28}{\second} rest is given. During rest person is asked to relax and not to move. This protocol is repeated 6 times. 3 or 4 run of this protocol is measured per participant.
+
+The device records 52 channel with a sampling rate of \SI{10}{\hertz}
+\subsection{Data selection}
+The same dataset has already been used in \cite{bauernfeind2011single,pfurtscheller2010focal} to find pattern in the brain response to mental arithmetic tasks. They identify 3 regions of interest (ROI) each containing 3 channel, called ROI-1,ROI-2, and ROI-3 (see Table \ref{Table:ROI}).They show that  a antagonistic activation patterns occurs, consisting in the rise of  oxy-Hb in ROI-2 and ROI-3 and decrease of oxy-Hb in ROI-1. Therefore in the following  only  the channels corresponding to  ROI-1,ROI-2, and ROI-3 are considered.
+\begin{table}
+\caption{Channels belonging to the three Region of Interest as defined in \cite{bauernfeind2011single}. In this report we examine the following 9 channels only.}
+\centering
+\begin{tabular}{c|ccc}
+	\hline
+	ROI-1	&46	&47	&48\\
+	\hline
+	ROI-2	&18	&28	&29\\		
+	\hline
+   	ROI-3	&13	&23	&24\\   
+   \end{tabular}   
+   \label{Table:ROI}
+\end{table}
+ The authors point out that oxy-Hb concentration provides stronger and less noisy signal compared to  deoxy-Hb concentration. Therefore in this report it has been chosen to consider the oxy-Hb concentration only. 
+
+
+\section{Cusum}
+Cusum 
+
+
+
+
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as  normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}          ==>>  [#]
+%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
+%%   \citet{key}         ==>>  Author [#]
+
+%% References with bibTeX database:
+
+\bibliographystyle{model1-num-names}
+\bibliography{sample.bib}
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-1-num.tex'.

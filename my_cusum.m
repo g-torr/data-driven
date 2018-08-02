@@ -8,6 +8,6 @@ t2=1:N-1;
 cusum_2nd=cusum_2nd(2:end,:)*sqrt(t2/((N-t2)*N));
 cusum=cusum_1st+cusum_2nd;
 
-[M,k]=max(diag(cusum*inv(cov(oxy(1:end-1,:)))*cusum'))
+[M,k]=max(diag(cusum/(cov(oxy(1:end-1,:)))*cusum'))
 end
 
