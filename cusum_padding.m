@@ -7,7 +7,8 @@ t2=2:N;
 cusum_2nd=flipud(cumsum(flipud(oxy)));% the second term in cusum formula starts from t+1
 cusum_2nd=cusum_2nd(2:end,:)*sqrt(t2/((N-t2)*N));
 cusum=cusum_1st+padarray(cusum_2nd,1,"pre");
-
-[M,k]=max(diag(cusum/cov(oxy)*cusum'));
+temp=diag(cusum/cov(oxy)*cusum');
+plot(temp)
+[M,k]=max(temp);
 end
 
