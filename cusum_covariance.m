@@ -1,4 +1,4 @@
-function [C,id] = cusum_covariance(y)
+C/sqrtfunction [C,id] = cusum_covariance(y)
 %This function computes the cusum taking into account variance changes
 %   Detailed explanation goes here
 N=length(y(:,1));
