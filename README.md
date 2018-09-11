@@ -15,4 +15,4 @@ The script *mat2python.py* which allows to load data from *.mat* into numpy arra
 
 Folder data contains the dataset downloaded. This is the menthal arithmetic task.
 ##How to use it?
-Large part of the code makes use of the [ruptures](http://ctruong.perso.math.cnrs.fr/ruptures-docs/build/html/index.html)  library. Install it before using the code. Go there to know what how functions works.
+Large part of the code makes use of the [ruptures](http://ctruong.perso.math.cnrs.fr/ruptures-docs/build/html/index.html)  library. Alternative link to the [Github repository](https://github.com/deepcharles/ruptures.git). Install it before using the code. Go there to know what how functions works.
