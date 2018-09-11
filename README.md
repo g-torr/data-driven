@@ -14,3 +14,5 @@ Matlab notebook *oxy.mat* which  invoques the matlab function  *cusum_padding.m*
 The script *mat2python.py* which allows to load data from *.mat* into numpy array.
 
 Folder data contains the dataset downloaded. This is the menthal arithmetic task.
+##How to use it?
+Large part of the code makes use of the [ruptures](http://ctruong.perso.math.cnrs.fr/ruptures-docs/build/html/index.html)  library. Install it before using the code. Go there to know what how functions works.
